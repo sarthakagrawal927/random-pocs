@@ -1,0 +1,372 @@
+{
+  "schema": "fleet.downloads-experiment-source-archive.v1",
+  "date": "2026-11-07",
+  "purpose": "Preserve authored trial source before removing disposable checkouts and dependencies. Archival source; scripts retain their original historical local-path assumptions.",
+  "upstream": {
+    "cinetic": {
+      "repository": "https://github.com/Leonxlnx/cinetic",
+      "revision": "a6a6a02202af73e450952b2e04d43c443c6124d2",
+      "tag": "v1.5.1",
+      "base_template": "skills/cinetic/assets/remotion-starter",
+      "shared_scripts": "skills/cinetic/scripts",
+      "restore": "Use upstream starter and shared scripts at the pinned revision, then overlay cinetic/first-film. Unchanged template source and scripts are not duplicated here."
+    },
+    "raea": {
+      "repository": "https://github.com/shinyobjectz/raea",
+      "release": "v0.1.0-canary.2",
+      "runtime": "Downloaded release binary and SDK excluded; obtain the matching macOS arm64 release to reproduce."
+    },
+    "mashup": {
+      "repository": "https://github.com/sass-maker/fleet-social",
+      "revision": "1e58ed04b7f2d38f3383ab142ab4af4ee2e92f83",
+      "source_path": "tools/mashup",
+      "restore": "Archived helper scripts are historical verification/demo drivers for this source revision."
+    }
+  },
+  "retained_media_home": "Downloads/projects/fleet/Fleet Assets/creative-trials-20261106",
+  "files": [
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/src/overlay-entry.tsx",
+      "destination": "cinetic/first-film/src/overlay-entry.tsx",
+      "kind": "source",
+      "bytes": 1759,
+      "sha256": "5542db0bd0530b9ef6a40bad0253c561457aa9d8d09008c0d50e8cf08ee7b94f"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/src/brand/fonts.ts",
+      "destination": "cinetic/first-film/src/brand/fonts.ts",
+      "kind": "source",
+      "bytes": 947,
+      "sha256": "b7921a10858f271c3a8ce499ff68cea04da3a670dfedb164a0407c4669b29603"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/src/brand/tokens.ts",
+      "destination": "cinetic/first-film/src/brand/tokens.ts",
+      "kind": "source",
+      "bytes": 8345,
+      "sha256": "f57d7d08030a4cb913c580150937359223091717068a11bc2a140e32e26f8747"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/package.json",
+      "destination": "cinetic/first-film/package.json",
+      "kind": "source",
+      "bytes": 2691,
+      "sha256": "3c13a233708dea06e1a58bdb0faae99db3c7f4663fec2e3af234645852c7575a"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/package-lock.json",
+      "destination": "cinetic/first-film/package-lock.json",
+      "kind": "source",
+      "bytes": 169243,
+      "sha256": "f380810c30ca81422fcc3993364cb7bd2a19a22f8b7077bd52cbb0b2c331c1d3"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/remotion.config.ts",
+      "destination": "cinetic/first-film/remotion.config.ts",
+      "kind": "source",
+      "bytes": 2666,
+      "sha256": "b5791660b950a0f56b377e2a39661a8fba96fc5e6f42acb5a64ed404dd729d91"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/film.json",
+      "destination": "cinetic/first-film/film.json",
+      "kind": "source",
+      "bytes": 283,
+      "sha256": "7bbe1c00c5bd62e4da6ebd0121660e288a7e104797e9b2ea1db8cac91f1d23f5"
+    },
+    {
+      "source": "raea-trial-2026-11-06/demo/edit.tsx",
+      "destination": "raea/demo/edit.tsx",
+      "kind": "source",
+      "bytes": 2291,
+      "sha256": "713ce4d9bab8eddbe3244179f5a744d85660a67b760d76489aefaac7236ed7b2"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/edit.tsx",
+      "destination": "raea/shape-of-a-note/edit.tsx",
+      "kind": "source",
+      "bytes": 13846,
+      "sha256": "a4452aa2e77c965071a2a71d87fe35ba9d5e9ff57df573426c54cca50cff466d"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/cues.ts",
+      "destination": "raea/shape-of-a-note/cues.ts",
+      "kind": "source",
+      "bytes": 1830,
+      "sha256": "efea1c85a2e0942b9008fb02ef48de0f921e2be9970955def7818ad7fb34ca5b"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/probe.tsx",
+      "destination": "raea/shape-of-a-note/probe.tsx",
+      "kind": "source",
+      "bytes": 739,
+      "sha256": "88e423d81c65727c2e81c22a6d9a62b6d880a1d1194a42abae4a537cdfd4ea69"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/narrate.py",
+      "destination": "raea/shape-of-a-note/narrate.py",
+      "kind": "source",
+      "bytes": 2949,
+      "sha256": "7370788068dbe3f41b400efff49bb3f5b751c04bb2c98830771f0176fa680a22"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/STORYBOARD.md",
+      "destination": "raea/shape-of-a-note/STORYBOARD.md",
+      "kind": "source",
+      "bytes": 2868,
+      "sha256": "a7d64beffc02bbd8c7e9cc91b9511fa70553245a9f912e881cfca874cf33dfcf"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/narration-cues.json",
+      "destination": "raea/shape-of-a-note/narration-cues.json",
+      "kind": "source",
+      "bytes": 942,
+      "sha256": "8d4dbc15193afdea07fa1f34f35687163c457c08782576f3e3a346f81c8fa860"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v1/STORYBOARD.md",
+      "destination": "raea/shape-of-a-note/versions/v1/STORYBOARD.md",
+      "kind": "source",
+      "bytes": 2522,
+      "sha256": "53c5b12d31029fe58116c34ca8c64caaf4baab4672e60e2e17823cb10c1ba3ae"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v1/cues.ts",
+      "destination": "raea/shape-of-a-note/versions/v1/cues.ts",
+      "kind": "source",
+      "bytes": 1830,
+      "sha256": "efea1c85a2e0942b9008fb02ef48de0f921e2be9970955def7818ad7fb34ca5b"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v1/edit.tsx",
+      "destination": "raea/shape-of-a-note/versions/v1/edit.tsx",
+      "kind": "source",
+      "bytes": 13251,
+      "sha256": "aa01fa8a2a9b809abfa1d2e784cd1ee7b5724e7bb3310eafbf99b714eef11d15"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v2/STORYBOARD.md",
+      "destination": "raea/shape-of-a-note/versions/v2/STORYBOARD.md",
+      "kind": "source",
+      "bytes": 2522,
+      "sha256": "53c5b12d31029fe58116c34ca8c64caaf4baab4672e60e2e17823cb10c1ba3ae"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v2/cues.ts",
+      "destination": "raea/shape-of-a-note/versions/v2/cues.ts",
+      "kind": "source",
+      "bytes": 1830,
+      "sha256": "efea1c85a2e0942b9008fb02ef48de0f921e2be9970955def7818ad7fb34ca5b"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v2/edit.tsx",
+      "destination": "raea/shape-of-a-note/versions/v2/edit.tsx",
+      "kind": "source",
+      "bytes": 14104,
+      "sha256": "aeebfbe8b955e8ca300bb3f30d50cdbde0e0409a338259b9bb1ba9fab98ee37c"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v3/STORYBOARD.md",
+      "destination": "raea/shape-of-a-note/versions/v3/STORYBOARD.md",
+      "kind": "source",
+      "bytes": 2522,
+      "sha256": "53c5b12d31029fe58116c34ca8c64caaf4baab4672e60e2e17823cb10c1ba3ae"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v3/cues.ts",
+      "destination": "raea/shape-of-a-note/versions/v3/cues.ts",
+      "kind": "source",
+      "bytes": 1830,
+      "sha256": "efea1c85a2e0942b9008fb02ef48de0f921e2be9970955def7818ad7fb34ca5b"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v3/edit.tsx",
+      "destination": "raea/shape-of-a-note/versions/v3/edit.tsx",
+      "kind": "source",
+      "bytes": 14070,
+      "sha256": "590988ffcb535acd351b0030f068e4bcb8b84d29e1ffc8aeff7e61e4b967b258"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v4/STORYBOARD.md",
+      "destination": "raea/shape-of-a-note/versions/v4/STORYBOARD.md",
+      "kind": "source",
+      "bytes": 2868,
+      "sha256": "a7d64beffc02bbd8c7e9cc91b9511fa70553245a9f912e881cfca874cf33dfcf"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v4/cues.ts",
+      "destination": "raea/shape-of-a-note/versions/v4/cues.ts",
+      "kind": "source",
+      "bytes": 1830,
+      "sha256": "efea1c85a2e0942b9008fb02ef48de0f921e2be9970955def7818ad7fb34ca5b"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/versions/v4/edit.tsx",
+      "destination": "raea/shape-of-a-note/versions/v4/edit.tsx",
+      "kind": "source",
+      "bytes": 13862,
+      "sha256": "f39eeed523dd5ffe60eeccca68813fe1b5575a2b8942872a3a9fa598c404df02"
+    },
+    {
+      "source": "mashup-media-extension-2026-11-06/install-local.py",
+      "destination": "mashup/extension-verification/install-local.py",
+      "kind": "source",
+      "bytes": 3022,
+      "sha256": "12560467228040e77524859a143b09dcfe44026136eee1d6840117b7f898517e"
+    },
+    {
+      "source": "mashup-media-extension-2026-11-06/verify-installed.py",
+      "destination": "mashup/extension-verification/verify-installed.py",
+      "kind": "source",
+      "bytes": 4354,
+      "sha256": "82f05b5de7a3bbee2eee1dd2884b21740a019028f0485d695d9d8f8bb0d6e4cf"
+    },
+    {
+      "source": "mashup-media-extension-2026-11-06/verify-repo.py",
+      "destination": "mashup/extension-verification/verify-repo.py",
+      "kind": "source",
+      "bytes": 1437,
+      "sha256": "9e85e39b5aab655ada486f1bb31eb9a1194cb8bd3c4a4fa21da53ef7065294d8"
+    },
+    {
+      "source": "mashup-media-extension-2026-11-06/write-readiness.py",
+      "destination": "mashup/extension-verification/write-readiness.py",
+      "kind": "source",
+      "bytes": 1615,
+      "sha256": "f65c4f458691d68e125673bc1484ec8657d9fd34421c2403b25cbe15c9566ee8"
+    },
+    {
+      "source": "mashup-media-extension-2026-11-06/pace-parser/main.swift",
+      "destination": "mashup/extension-verification/pace-parser/main.swift",
+      "kind": "source",
+      "bytes": 30661,
+      "sha256": "4867aa4422e3d3b485fec6e9cae9cff7525dea069840d0eb974776e525f1a3a2"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/make-assets.py",
+      "destination": "mashup/demo/make-assets.py",
+      "kind": "source",
+      "bytes": 5184,
+      "sha256": "bf3c4928cb9dd12b5276c3f65b92a418be1fb0ec30cf6e3c6e066f90aad38614"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/run-mcp-demo.py",
+      "destination": "mashup/demo/run-mcp-demo.py",
+      "kind": "source",
+      "bytes": 5237,
+      "sha256": "bd9a40385d5655f938f8d039458f35ad5b8174bb4e4d8091cf8f0897a1e92c5c"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/codevetter-diagnostic.py",
+      "destination": "mashup/demo/codevetter-diagnostic.py",
+      "kind": "source",
+      "bytes": 467,
+      "sha256": "280048d3192cfd8cfa483abe67ccae24718d67fb2aff16fa903e1504ef7d11f4"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/provenance.json",
+      "destination": "mashup/demo/provenance.json",
+      "kind": "source",
+      "bytes": 353,
+      "sha256": "6880f990bd4d8e1a1552f8a87386e8664e8b8de167df30d1eb45a4c1e3ee37ee"
+    },
+    {
+      "source": "cinetic-trial-2026-11-06/first-film/out/transparent-wave-final.mov",
+      "destination": "finals/cinetic-transparent-wave-final.mov",
+      "kind": "retained-media",
+      "bytes": 43811990,
+      "sha256": "eb758ecb676a68e85499405c146dc3c1928e9131b9bd7b5d66b716354ed8b36c"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/out/the-shape-of-a-note-master-v2.mp4",
+      "destination": "finals/the-shape-of-a-note-master-v2.mp4",
+      "kind": "retained-media",
+      "bytes": 31588346,
+      "sha256": "f0ba460e7a9b875807bff8dbb0d416e6ecdac3ad1a437ad557ae6ffd0143c923"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/dancing-overlay.mp4",
+      "destination": "finals/mashup-dancing-overlay.mp4",
+      "kind": "retained-media",
+      "bytes": 420512,
+      "sha256": "c5a8e64ce9919695d31e7a074aec71100bedfa33b64f180ae94d91b1c17b6cfb"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/circles.wav",
+      "destination": "originals/raea/narration/circles.wav",
+      "kind": "retained-media",
+      "bytes": 147644,
+      "sha256": "a94098f458a0b7a94ae6ebb259674c4a2a9a1e7229b5b2a4a026026e8bf8e6b9"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/ending.wav",
+      "destination": "originals/raea/narration/ending.wav",
+      "kind": "retained-media",
+      "bytes": 247244,
+      "sha256": "3da2f7d79b673ad3cb0a397b0832dc6c6a022a1217a80fe36acf1282e8942263"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/fifth.wav",
+      "destination": "originals/raea/narration/fifth.wav",
+      "kind": "retained-media",
+      "bytes": 87644,
+      "sha256": "4d9a98ce38e56e1baa56d2840c7c9e014cc7eccfe4c612a40c8c13d2dcfb9d6c"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/listen.wav",
+      "destination": "originals/raea/narration/listen.wav",
+      "kind": "retained-media",
+      "bytes": 68444,
+      "sha256": "48ed68734ca6550e8afbcbe373e0d929d24ae4589f3a3d069ad606f63910f913"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/melody.wav",
+      "destination": "originals/raea/narration/melody.wav",
+      "kind": "retained-media",
+      "bytes": 175244,
+      "sha256": "90f7c9cdf823571b2604a802ca9bad63c51c49705ebe9224888b6841a346d7de"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/pure.wav",
+      "destination": "originals/raea/narration/pure.wav",
+      "kind": "retained-media",
+      "bytes": 270044,
+      "sha256": "b788b178837c24920422b9cef0b7df3a8a2e47ea705e39004d62937de56dda40"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/third.wav",
+      "destination": "originals/raea/narration/third.wav",
+      "kind": "retained-media",
+      "bytes": 120044,
+      "sha256": "e6ae8bef09329a20c7ded3c1d08ade3c95ad49a4b138311a1aa6a58e1fd0fcb4"
+    },
+    {
+      "source": "raea-trial-2026-11-06/shape-of-a-note/media/narration/timbre.wav",
+      "destination": "originals/raea/narration/timbre.wav",
+      "kind": "retained-media",
+      "bytes": 213644,
+      "sha256": "a5f91e72c844e7329e477837edc1860b3e2b3bd775ca0c019069f1e4946e4f48"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/assets/landscape.png",
+      "destination": "originals/mashup/landscape.png",
+      "kind": "retained-media",
+      "bytes": 14286,
+      "sha256": "f9621906c79ccbe86d50cd40f2d39853e906b244f7af5362ec0a3b1437423c81"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/assets/moving-landscape.mp4",
+      "destination": "originals/mashup/moving-landscape.mp4",
+      "kind": "retained-media",
+      "bytes": 193741,
+      "sha256": "f909513491d0c56e13c6c6fdb4d79f45a17ff1958ae1885d4624e2f0a1289680"
+    },
+    {
+      "source": "media-extension-demo-2026-11-06/assets/dancing-mascot.mov",
+      "destination": "originals/mashup/dancing-mascot.mov",
+      "kind": "retained-media",
+      "bytes": 7027457,
+      "sha256": "3e5b9bfd967cc736a90a71c4fa5b23cee5c75c4abf420d8e8fab92a7bdeefda6"
+    }
+  ]
+}

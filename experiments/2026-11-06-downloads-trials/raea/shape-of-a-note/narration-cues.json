@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pure",
+    "at": 7.15,
+    "before": 17.5,
+    "text": "Start with one frequency. This pure tone vibrates two hundred and twenty times a second."
+  },
+  {
+    "id": "third",
+    "at": 18.05,
+    "before": 21.9,
+    "text": "Now, three times the frequency."
+  },
+  {
+    "id": "fifth",
+    "at": 23.25,
+    "before": 25.45,
+    "text": "Then five times."
+  },
+  {
+    "id": "circles",
+    "at": 27.2,
+    "before": 31.9,
+    "text": "Their vertical motions add to draw the wave."
+  },
+  {
+    "id": "timbre",
+    "at": 32.05,
+    "before": 38.2,
+    "text": "Same pitch. Different timbre. Listen to the change in tone color."
+  },
+  {
+    "id": "melody",
+    "at": 45.05,
+    "before": 50.0,
+    "text": "Keep the blend, and move all three frequencies together."
+  },
+  {
+    "id": "ending",
+    "at": 56.1,
+    "before": 63.8,
+    "text": "Pitch is the repeat rate. Harmonics shape timbre. So do the attack and decay."
+  }
+]

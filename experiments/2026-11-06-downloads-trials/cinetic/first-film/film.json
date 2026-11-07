@@ -1,0 +1,17 @@
+{
+  "template": null,
+  "started": "2026-11-06T05:04:35.194Z",
+  "devices": {
+    "ground": "",
+    "voice": "",
+    "emphasis": "colour",
+    "signature": "",
+    "moves": [],
+    "seams": [],
+    "end": "",
+    "logo": "",
+    "type": "funnel"
+  },
+  "allow": [],
+  "recent": []
+}
